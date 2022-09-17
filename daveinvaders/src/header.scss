@@ -1,0 +1,68 @@
+// header
+  
+  
+  
+.head {
+    color: lightgreen;
+    padding-top: 50px;
+    text-align: center;
+    background: 100% 100% / 50% 50% no-repeat
+                radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    font-family: "Source Sans Pro", sans-serif;
+    animation: reveal 7000ms ease-in-out forwards 1200ms,
+               glow 7500ms linear infinite 4000ms;
+  
+    @keyframes reveal {
+      80%{
+        letter-spacing: 8px;
+      }
+      100% {
+        background-size: 300% 300%;
+      }
+    }
+    @keyframes glow {
+      40% {
+        text-shadow: 0 0 8px #fff;
+      }
+    }
+  }  
+  
+  
+  
+  
+  
+  .head2 {
+    color: lightgreen;
+    
+    text-align: center;
+    text-decoration-line: underline;
+    background: 100% 100% / 50% 50% no-repeat
+                radial-gradient(ellipse at bottom, rgb(82, 248, 4), transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 20px;
+    font-family: "Source Sans Pro", sans-serif;
+    animation: reveal 7000ms ease-in-out forwards 1200ms,
+               glow 7500ms linear infinite 4000ms;
+  
+    @keyframes reveal {
+      80%{
+        letter-spacing: 8px;
+      }
+      100% {
+        background-size: 300% 300%;
+      }
+    }
+    @keyframes glow {
+      40% {
+        text-shadow: 0 0 8px #fff;
+      }
+    }
+  }  
+  
+  

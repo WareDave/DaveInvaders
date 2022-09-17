@@ -1,0 +1,41 @@
+// bacic html el
+
+body {
+
+    background: rgb(64,105,34);
+  background: linear-gradient(90deg, rgba(64,105,34,1) 0%, rgba(0,0,0,1) 50%, rgba(64,105,34,1) 100%);
+        
+      }
+    
+      
+    // scroll bar
+    
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #245321; 
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: rgb(2, 8, 0); 
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgb(106, 170, 2); 
+    }
+    
+    
+   
+    //   About H1
+  
+    .about {
+      color: greenyellow;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+      
