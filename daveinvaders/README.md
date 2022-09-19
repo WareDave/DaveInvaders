@@ -67,4 +67,153 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/
+
+troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+1. Create a node project
+
+create a new folder, open it in VSCode and run npm init -y this will initialize a new node project and add the package.json file.
+
+npm init -y
+
+2. Install Babel dependencies
+
+Babel is a compiler that converts your modern JavaScript to run in older browsers. Mainly in React we use jsx syntax which is not supported by older browser and we will need Babel to convert it |
+
+Run the following command to install Babel dependencies (note that we install them as dev dependencies)
+
+npm install --save-dev @babel/core babel-loader @babel/cli @babel/preset-env @babel/preset-react
+
+
+3. Install Webpack dependencies
+Webpack is a static module bundler for modern JavaScript applications. it takes different files and bundles them into a single JavaScript file. When building React apps you will end up with many files with different formats and you will need them bundled in a single JavaScript file that will be severed along our index.html to make our app run | 
+
+Run the following command to install Webpack dependencies (note that we install them as dev dependencies)
+
+npm install --save-dev webpack webpack-cli webpack-dev-server
+
+
+4. Install HtmlWebpackPlugin
+The HtmlWebpackPlugin simplifies creation of HTML files to serve your webpack bundles. as mentioned above when Webpack bundles all our files, it generate a single JavaScript (know as bundle) that will be served along our html file. HtmlWebpackPlugin handles creation these html files. you can
+
+run the following command to install HtmlWebpackPlugin
+
+
+npm install --save-dev html-webpack-plugin
+
+
+5. Install React dependencies
+React is a JavaScript library for creating user interfaces.
+The react package contains only the functionality necessary to define React components. It is typically used together with a React renderer like react-dom for the web. an these are the main dependencies that allows as to actually use React
+
+Run the follow command (note that we install them as main dependencies not dev)
+
+npm install react react-dom 
+
+
+6. Add React files
+create a public folder and create an index.html file and add the following code
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React App</title>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html> -->
+
+
+this will be the html file for our app and our whole application will live in that div with id root
+
+create a src folder and create an App.js file and add the following code
+
+<!-- import React from "react";
+
+const App = () =>{
+    return (
+        <h1>
+            Hello world! I am using React
+        </h1>
+    )
+}
+
+export default App -->
+
+
+we just created our react component note that the name is capitalized as it is a react component
+
+back in the root folder create an index.js which will be the entry of our app. add the following code
+
+<!-- import React from 'react'
+import  { createRoot }  from 'react-dom/client';
+import App from './src/App.js'
+
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<App/>); -->
+
+7. configure Babel
+
+create a file named .babelrc and add the following code
+
+<!-- {
+    "presets": ["@babel/preset-env","@babel/preset-react"]
+} -->
+
+
+<!-- const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+
+module.exports = {
+  entry: './index.js',
+  mode: 'development',
+  output: {
+    path: path.resolve(__dirname, './dist'),
+    filename: 'index_bundle.js',
+  },
+  target: 'web',
+  devServer: {
+    port: '5000',
+    static: {
+      directory: path.join(__dirname, 'public')
+},
+    open: true,
+    hot: true,
+    liveReload: true,
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.json'],
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/, 
+        exclude: /node_modules/, 
+        use: 'babel-loader', 
+      },
+    ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'public', 'index.html')
+    })
+  ]
+}; -->
+
+
+
+There is some issue in npm install which is not able to complete the installation of react scripts. Follow these simple steps to get it worked.
+
+
+Run npm install
+Run npm i -S react-scripts
+Run npm start
