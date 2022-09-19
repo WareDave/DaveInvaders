@@ -34,16 +34,16 @@ class App extends Component {
 
       <Nav/>
           <Head/>
-            <Hero/><br></br>
+            <Hero /><br></br>
 
            
-            <h1 class='about'>[ Colaberation ]</h1><br></br>
+            <h1 class='about' href='#contact'>[ Contact ]</h1><br></br>
 
             <Col/>
 
-            <h1 class='about'>[ About Dave ]</h1><br></br>
+            <h1 class='about' href='#abot'>[ About Dave ]</h1><br></br>
 
-            <Timeline/><br></br><br></br><br></br>
+            <Timeline href='#timeline'/><br></br><br></br><br></br>
            
            
            
