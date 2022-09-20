@@ -42,7 +42,7 @@ class App extends Component {
 
             <Col/><br></br>
 
-            <h1 class='about'>[ HTML ]</h1><br></br>
+            <h1 class='about'>[ HTML ]</h1>
 
             <Html/>
 

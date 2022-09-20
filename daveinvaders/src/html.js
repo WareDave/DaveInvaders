@@ -40,7 +40,7 @@ class Html extends Component {
 
         <a class=' info fa fa-html5' href='https://en.wikipedia.org/wiki/HTML'></a>
 
-        <h2 class='header'>TAGS</h2>
+        <h2 class='header'>TAG LIST</h2>
 
         
         <code class='code'>
