@@ -39,9 +39,26 @@ class App extends Component {
            
             <h1 class='about' href='#contact'>[ Contact ]</h1><br></br>
 
-            <Col/>
+            <Col/><br></br>
+
+            <h1 class='about'>[ HTML ]</h1><br></br>
+
+            <h1 class='about'>[ CSS ]</h1><br></br>
+
+            <h1 class='about'>[ SASS/SCSS ]</h1><br></br>
+
+            <h1 class='about'>[ JavaScript ]</h1><br></br>
+
+            <h1 class='about'>[ Python ]</h1><br></br>
+
+            <h1 class='about'>[ React ]</h1><br></br>
+
+            <h1 class='about'>[ SQL ]</h1><br></br>
+
+
 
             <h1 class='about' href='#abot'>[ About Dave ]</h1><br></br>
+
 
             <Timeline href='#timeline'/><br></br><br></br><br></br>
            
