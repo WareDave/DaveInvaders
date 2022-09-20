@@ -32,6 +32,7 @@ class Nav extends Component {
             <a><i class="fab fa-python"></i></a>
             <a href="#about"><i class="fas fa-comments"></i></a>
             <a><i class="fas fa-chess"></i></a>
+            <a><i class='fa fa-search'></i></a>
         </div>
        
     </div>

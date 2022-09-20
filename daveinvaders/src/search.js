@@ -41,12 +41,30 @@ class App extends Component {
     return (
      
      
-
-
+        <div class="row">
+        <div class="left" style="background-color:#bbb;">
+          <h2>Menu</h2>
+          <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"></input>
+          <ul id="myMenu">
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#HTML">HTML</a></li>
+            <li><a href="#CSS">CSS</a></li>
+            <li><a href="#JavaScript">JavaScript</a></li>
+            <li><a href="#Python">Python</a></li>
+            <li><a href="#React">React</a></li>
+            <li><a href="#SQL">SQL</a></li>
+            <li><a href="#Bootstrap">Bootstrap</a></li>
+            <li><a href="#Node.js">Node.js</a></li>
+          </ul>
+        </div>
+        
       
-   <div>
-
-   </div>
+        <div class='right'>
+           <h1>plese use this to find anything lister on this site</h1>
+        </div>
+        </div>
+   
      
     )
   }

@@ -14,7 +14,8 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
+    
   }
   
   /* Change the color of links on hover */
@@ -48,6 +49,13 @@ a:hover::before {
     position: fixed;
     top: 0;
     width: 100%;
+  }
+
+  .search {
+    justify-content: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
   }
   
  
