@@ -38,7 +38,7 @@ class Html extends Component {
         HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
         </p>
 
-        <i class='info fa fa-html5' href='https://en.wikipedia.org/wiki/HTML'></i>
+        <a class=' info fa fa-html5' href='https://en.wikipedia.org/wiki/HTML'></a>
 
         <h2 class='header'>TAGS</h2>
 
