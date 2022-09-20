@@ -2,7 +2,8 @@
 	position: relative;
 	margin: 300px auto 0;
 	width: 1000px;
-	background: linear-gradient(0deg, #000, #272727);
+	background: rgb(0,0,0);
+	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(104,34,105,1) 50%, rgba(0,0,0,1) 100%);;
 }
 
 .block:before, .block:after {

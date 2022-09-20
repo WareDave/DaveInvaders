@@ -40,6 +40,8 @@ class Css extends Component {
     enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.    
     </p>
 
+    
+
     <h2>( Property List )</h2>
 
     <p></p>
