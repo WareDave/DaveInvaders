@@ -5,6 +5,7 @@ import Ttt from './ttt';
 import Nav from './nav.js'
 import Hero from './hero'
 import Head from './header.js'
+import Html from './html.js'
 import Timeline from './timeline.js'
 import Col from './col.js'
 import Footer from './footer.js'
@@ -41,7 +42,9 @@ class App extends Component {
 
             <Col/><br></br>
 
-            <h1 class='about'>[ HTML ]</h1><br></br>
+            <h1 class='about'>[ HTML ]</h1>
+
+            <Html/>
 
             <h1 class='about'>[ CSS ]</h1><br></br>
 
