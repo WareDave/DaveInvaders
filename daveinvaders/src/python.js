@@ -28,19 +28,27 @@ class Python extends Component {
     
     <div class='block_py'>
 
-    <h2 class='header'>What is Python?</h2>
-
-    <p class='info'>Python is a general purpose and high level programming language. You can use Python for developing desktop GUI applications,
-    websites and web applications. Also, Python, as a high level programming language,
-    allows you to focus on core functionality of the application by taking care of common programming tasks.
     
-    <br/>-medium.com </p>
-      
-    <br/><p class='info'> for documents click</p> 
-    <a href="https://docs.python.org/3/" class="fab fa-python yellow-text center-align">Doc</a>
-    <p class='info'>Basic of Python Code</p>
-        
-    <pre><code class='code'>
+
+    <div class='code_div'>
+
+    <p class='info_py'>
+    Python is a general purpose, mid, and high level programming language. What what what! It has a large number of uses. lol. You can use Python for developing desktop GUI applications,
+    websites and web applications. 
+    Python, as a high level programming language, allows you to focus on core functionality of the application by taking care of common programming tasks.
+    Pyhton as a mid level to function as a translator to your base level.
+    
+    </p>
+    
+    
+    </div>
+
+
+    
+    
+    <div class='code_div'>
+
+    <pre><code class='code_py'>
              the basics: <br/>
              Data types:<br/>
              Text Type:	str<br/>
@@ -64,9 +72,13 @@ class Python extends Component {
               sux = 4two<br/><br/>
       </code></pre>
 
-      <p class='info'>basic Syntax and loops:</p><br/>
+      </div>
 
-      <pre><code class="Python">player_name =  input("Ready to boogie what's your name?")<br/>
+      <p class='info_py'>Basic Syntax and loops:</p><br/>
+
+      <div class='code_div'>
+
+      <pre><code class="code_py">player_name =  input("Ready to boogie what's your name?")<br/>
       print("ready for this {}".format(player_name) + 'let us Boogie')<br/>
 
 
@@ -88,9 +100,13 @@ class Python extends Component {
       restart = input("Do you want to restart the game {}? Yes or No ".format(player_name))<br/>
       if restart == 'yes':<br/>
       main()<br/>
-      </code></pre> 
+      </code></pre>
+
+      </div>
+
+  <div class='code_div'>     
       
-  <pre class="line-numbers"><code class="language-python"> 
+  <pre class="code_py line-numbers"><code class="code _py language-python"> 
   
   import sys<br/>
   import random<br/><br/>
@@ -178,11 +194,15 @@ class Python extends Component {
 		
 	elif answers == 25: <br/><br/>
 		print ("not metal.")<br/><br/>
-  </code></pre>   
+  </code></pre>
+
 
   </div>
 
-  
+
+  </div>
+
+
     </main>
      
     )
