@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import './'
+import './css.scss'
 
 
 
@@ -26,13 +25,31 @@ class Css extends Component {
       
     <main>
 
+     
+
       
     <div class='block'>
+    
+
+    <div class='img_div'>
+    
+      <img src='https://i.imgur.com/MY4FQ3Rb.png' class='img_css'></img>
+
+    </div>
+    
+
     <h2 class='header'>What is CSS?</h2>
+
+    <div class='div_info'>
+
     <p class='info'>
     Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML
     (including XML dialects such as SVG, MathML or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
     </p>
+
+    </div>
+
+    <div class='div_info'>
 
     <p class='info'>
     CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.
@@ -40,7 +57,7 @@ class Css extends Component {
     enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.    
     </p>
 
-
+    </div>
 
     <h2 class='header'>( Property List )</h2>
 

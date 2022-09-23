@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './python.scss'
 
 
@@ -28,7 +27,7 @@ class Python extends Component {
     
     <div class='block_py'>
 
-    
+    <a class='img_py' href="https://imgur.com/Tqmi0k1"><img src="https://i.imgur.com/Tqmi0k1.png" title="source: imgur.com" /></a>
 
     <div class='code_div'>
 

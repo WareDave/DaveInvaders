@@ -44,10 +44,6 @@ class App extends Component {
 
             <Col/><br></br>
 
-            <h1 class='about'>[ Python ]</h1><br></br>
-
-            <Python/>
-
             <h1 class='about'>[ HTML ]</h1>
 
             <Html/>
@@ -55,6 +51,10 @@ class App extends Component {
             <h1 class='about'>[ CSS ]</h1>
 
             <Css/>
+
+            <h1 class='about'>[ Python ]</h1>
+
+            <Python/>
 
             <h1 class='about'>[ SASS/SCSS ]</h1><br></br>
 
