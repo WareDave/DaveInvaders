@@ -7,6 +7,7 @@ import Hero from './hero'
 import Head from './header.js'
 import Html from './html.js'
 import Css from './css.js'
+import JavaScript from './javascript';
 import Python from './python';
 import Timeline from './timeline.js'
 import Col from './col.js'
@@ -59,6 +60,8 @@ class App extends Component {
             <h1 class='about'>[ SASS/SCSS ]</h1><br></br>
 
             <h1 class='about'>[ JavaScript ]</h1><br></br>
+
+            <JavaScript/>
 
             <h1 class='about'>[ React ]</h1><br></br>
 

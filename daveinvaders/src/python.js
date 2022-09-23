@@ -27,7 +27,11 @@ class Python extends Component {
     
     <div class='block_py'>
 
+    <div class='img_div'>
+
     <a class='img_py' href="https://imgur.com/Tqmi0k1"><img src="https://i.imgur.com/Tqmi0k1.png" title="source: imgur.com" /></a>
+
+    </div>
 
     <div class='code_div'>
 
@@ -62,6 +66,7 @@ class Python extends Component {
               sux = 5<br/>
               print(dave)<br/>
               print(sux)<br/><br/>
+              print(dave + sux)
               Numbers:<br/>
               int<br/>
               float<br/>
@@ -75,19 +80,22 @@ class Python extends Component {
 
       <p class='info_py'>Basic Syntax and loops:</p><br/>
 
+      <h3 class='header_py'>50 STATE GAME</h3>
+
       <div class='code_div'>
 
-      <pre><code class="code_py">player_name =  input("Ready to boogie what's your name?")<br/>
+      <code class="code_py2">
+            
+      player_name =  input("Ready to boogie what's your name?")<br/>
       print("ready for this {}".format(player_name) + 'let us Boogie')<br/>
-
-
       States=list(state_capitals.keys())# sets list with key<br/>
-      print ('Your bitch ass still needs to learn US States and Capitals. 50 mf rounds. Enter exit to punk out.')<br/>
+      print ('You still needs to learn US States and Capitals. 50 rounds. Enter exit to end.')<br/>
       point=0 <br/>
       for i in range(5): # sets up rounds<br/>
       state=random.choice(States) <br/>
       capital = state_capitals[state]<br/>
-      user_guess = input('what is the capital of %s?'%state + 'your going to get it wrong {}. '.format(player_name))<br/>
+      user_guess = input('what is the capital of %s?'%state + 'your going to get it wrong {}.<br/>
+      '.format(player_name))<br/>
       if user_guess.lower() == 'exit': # lets you to exit <br/>
       break<br/>
       elif user_guess.title() == capital:<br/>
@@ -99,9 +107,11 @@ class Python extends Component {
       restart = input("Do you want to restart the game {}? Yes or No ".format(player_name))<br/>
       if restart == 'yes':<br/>
       main()<br/>
-      </code></pre>
+      </code>
 
       </div>
+
+      <h3 class='header_py'>ASK THE WAREDAVE GAME</h3>
 
   <div class='code_div'>     
       

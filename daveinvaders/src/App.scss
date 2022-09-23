@@ -1,33 +1,39 @@
 // bacic html el
 
 body {
-
+    font-family: Orbitron;
     background: rgb(64,105,34);
-  background: linear-gradient(90deg, rgba(64,105,34,1) 0%, rgba(0,0,0,1) 50%, rgba(64,105,34,1) 100%);
+    background: linear-gradient(90deg, rgba(64,105,34,1) 0%, rgba(0,0,0,1) 50%, rgba(64,105,34,1) 100%);
         
-      }
+}
     
       
     // scroll bar
     
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
+  ::-webkit-scrollbar {
+      width: 15px;
+      overflow-y: scroll;
+}
     
-    /* Track */
-    ::-webkit-scrollbar-track {
-      background: #245321; 
-    }
+    /* Runing Track */
+  ::-webkit-scrollbar-track {
+      background: rgb(47, 43, 43);
+      
+      
+}
      
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-      background: rgb(2, 8, 0); 
-    }
+    /* Thumb */
+  ::-webkit-scrollbar-thumb {
+      background: rgb(69, 114, 32);
+      border-radius: 25%;
+      border: solid, 5px, yellowgreen; 
+}
     
     /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-      background: rgb(106, 170, 2); 
-    }
+  ::-webkit-scrollbar-thumb:hover {
+      background: rgb(148, 238, 3);
+      border-radius: 25%; 
+}
     
     
    
