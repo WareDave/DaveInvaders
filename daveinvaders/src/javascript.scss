@@ -102,11 +102,17 @@ $line-color: rgb(243, 5, 5);
 	filter: blur(50px);
 }
 
-.code {
+
+
+.code_js {
     display: flex;
     justify-content: center;
+	text-align: justify;
+    width: 600px;
     background-color: black;
     color: lawngreen;
+	
+	border: solid 2px red;
 }
 
 .header_js {
@@ -140,5 +146,6 @@ $line-color: rgb(243, 5, 5);
     margin: 30px;
 	image-resolution: 1080p;
 	border-radius: 10%;
+    border: solid 2px #ff0000;
 }
 

@@ -59,9 +59,11 @@ class JavaScript extends Component {
 
     </div>
 
+    <div class='code_div'> 
+
     <pre>
     
-    <code class="code">
+    <code class="code_js">
 
     Data Types:
     undefined : "undefined"<br/>
@@ -74,17 +76,22 @@ class JavaScript extends Component {
                                      
     </code>
     
-    </pre> 
+    </pre>
+
+    </div> 
 
     <div>
 
     <h2 class="header_js">Basic Logic:</h2>
 
     </div>
-                                      
+
+    <div class='code_div'> 
+
     <pre>
+
       
-    <code class="code">
+    <code class="code_js">
 
     Looping from 1 to 100 white board<br/><br/>
 
@@ -107,7 +114,9 @@ class JavaScript extends Component {
 
     </code>
     
-    </pre>                                   
+    </pre> 
+
+    </div>                                  
                                       
     <div>
 
@@ -115,9 +124,10 @@ class JavaScript extends Component {
 
     </div>
 
+    <div class='code_div'>
 
     <pre>
-    <code class="code">
+    <code class="code_js">
     
 
     const a = 4;<br/> 
@@ -137,6 +147,8 @@ class JavaScript extends Component {
     </code>
     
     </pre> 
+
+    </div>
 
     </div>
 
