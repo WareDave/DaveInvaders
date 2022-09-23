@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './html.scss'
 
 
@@ -29,7 +28,7 @@ class Html extends Component {
       <div class='block_html'>
         <br></br>
 
-        <div class='img_div'>
+        <div class='img_html'>
 
 
         <a class='header_html' href="https://en.wikipedia.org/wiki/HTML"><img src="https://i.imgur.com/hmz5ygCb.jpg" title="source: imgur.com" /></a>

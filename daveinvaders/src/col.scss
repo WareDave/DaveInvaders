@@ -1,7 +1,179 @@
+$line-color: rgb(14, 137, 2);
+
+.block_col {
+	position: relative;
+	margin: 300px auto 0;
+	width: 1400px;
+	// background: rgb(0,0,0);
+	// background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(104,34,105,1) 50%, rgba(0,0,0,1) 100%);;
+    background-color: #222;
+	background-image:
+		linear-gradient(
+		    25deg,
+			  transparent 65%,
+			  $line-color,
+			  transparent 70%
+		    ),
+		linear-gradient(
+		    -25deg,
+			  transparent 65%,
+			  $line-color,
+			  transparent 70%
+		    ),
+		linear-gradient(
+		    -25deg,
+			  transparent 30%,
+			  $line-color,
+			  transparent 35%
+		    ),
+		linear-gradient(
+		    25deg,
+			  transparent 30%,
+			  $line-color,
+			  transparent 35%
+		    ),		
+		
+		// ◊
+		linear-gradient(
+		    65deg,
+			  transparent 65%,
+			  $line-color,
+			  transparent 70%
+		    ),
+		linear-gradient(
+		    -65deg,
+			  transparent 65%,
+			  $line-color,
+			  transparent 70%
+		    ),
+		linear-gradient(
+		    -65deg,
+			  transparent 30%,
+			  $line-color,
+			  transparent 35%
+		    ),
+		linear-gradient(
+		    65deg,
+			  transparent 30%,
+			  $line-color,
+			  transparent 35%
+		    );
+	background-size: 
+		5em 2em,
+		5em 2em,
+		5em 2em,
+		5em 2em,
+		
+		2em 5em,
+		2em 5em,
+		2em 5em,
+		2em 5em;
+}
+
+.block:before, .block:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+	#0000ff, #00ff00,#ffff00, #ff0000);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.block:after {
+	filter: blur(50px);
+}
+
 .phone {
+    margin: 30px;
     display: flex;
     justify-content: center;
     
     
+}
+
+a {
+    color: #00ff00;
+}
+
+.git {
+    display: flex;
+    justify-content: left;
+}
+
+.phone_div{
+    
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px;
+    color: lightgreen;
+    width: 1000px;
+    height: 600px;
+    background-color: black;
+   
+
+}
+
+.block_div {
+	position: relative;
+	margin: 300px auto 0;
+	width: 1000px;
+	// background: rgb(0,0,0);
+	// background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgb(86, 84, 82) 50%, rgba(0,0,0,1) 90%);
+	background-image:
+    linear-gradient(rgba(255,255,255,.5) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255,255,255,.5) 2px, transparent 2px),
+    linear-gradient(rgba(255,255,255,.28) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.28) 1px, transparent 1px);
+ 	background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  	background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+.block_div:before, .block:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #00fb8a, #0fff02,#205e07, 
+	#f6f6f8, rgb(3, 177, 23));
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.block:after {
+	filter: blur(50px);
 }
 
