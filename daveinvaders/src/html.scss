@@ -1,18 +1,25 @@
-.block {
+.block_html {
 	position: relative;
 	margin: 300px auto 0;
 	width: 1000px;
-	background: rgb(0,0,0);
-	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(104,34,105,1) 50%, rgba(0,0,0,1) 100%);;
+	// background: rgb(0,0,0);
+	// background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgb(86, 84, 82) 50%, rgba(0,0,0,1) 90%);
+	background-image:
+    linear-gradient(rgba(255,255,255,.5) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255,255,255,.5) 2px, transparent 2px),
+    linear-gradient(rgba(255,255,255,.28) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.28) 1px, transparent 1px);
+ 	background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  	background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
 }
 
-.block:before, .block:after {
+.block_html:before, .block:after {
 	content: '';
 	position: absolute;
 	left: -2px;
 	top: -2px;
-	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-		#0000ff, #00ff00,#ffff00, #ff0000);
+	background: linear-gradient(45deg, #00fb8a, #0fff02,#205e07, 
+	#f6f6f8, rgb(3, 177, 23));
 	background-size: 400%;
 	width: calc(100% + 4px);
 	height: calc(100% + 4px);
@@ -43,16 +50,38 @@
     color: lawngreen;
 }
 
-.header {
+.header_html {
+	margin-top: 20px;
     display: flex;
     justify-content: center;
-    color: #fb0094;
+    color: #209d1b;
+	border-radius: 50%;
+	
 }
 
-.info {
+.img_html{
+	image-resolution: 1080p;
+	border-radius: 10%;
+}
+
+.header_html:hover {
+background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 25%, rgb(198, 86, 0) 50%, rgba(0,0,0,1) 70%);;
+
+
+
+}
+
+.div_info {
+	display: flex;
+	justify-content: center;
+}
+
+.info_html {
     display: flex;
-    justify-content: center;
-    color: rgb(96, 223, 47);
+	justify-content: center;
+    color: rgb(165, 252, 131);
+	width: 600px;
 }
 
 // .fa {

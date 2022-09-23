@@ -1,0 +1,75 @@
+.block_py {
+	position: relative;
+	margin: 300px auto 0;
+	width: 1000px;
+    // background-image: url('https://i.imgur.com/Oc5V92P.jpg');
+	background: rgb(0,0,0);
+    background: linear-gradient(45deg, rgb(0,0,0), rgb(160, 182, 0) 0%, rgba(34,39,105,1) 50%, rgba(0,0,0,1) 100%);
+    
+}
+
+
+
+.block_py:before, .block_py:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #00d9fb, #0000ff, #d4ff00,#ffff00, #011071, #fdff6f, 
+		#0000ff,#ffff00, #020681);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.block_py:after {
+	filter: blur(50px);
+}
+
+.code_div {
+    display: flex;
+    justify-content: center;
+}
+
+.code_py {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    background-color: black;
+    color: lawngreen;
+}
+
+.img_py {
+
+    display: flex;
+    justify-content: center;  
+}
+
+.header_py {
+    display: flex;
+    justify-content: center;
+    color: #fb0000;
+}
+
+
+
+.info_py {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    color: rgb(201, 17, 38);
+}

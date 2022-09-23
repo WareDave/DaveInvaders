@@ -26,21 +26,45 @@ class Html extends Component {
       
     <main>
 
-      <div class='block'>
-        <h2 class='header'>What is Html?</h2>
+      <div class='block_html'>
+        <br></br>
+
+        <div class='img_div'>
+
+
+        <a class='header_html' href="https://en.wikipedia.org/wiki/HTML"><img src="https://i.imgur.com/hmz5ygCb.jpg" title="source: imgur.com" /></a>
+
+        </div>
+
+        <h2 class='header_html'>What is Html?</h2>
         
-        <p class='info'>The HyperText Markup Language or HTML is the standard markup language for documents 
+        <div class='div_info'>
+        
+        <p class='info_html'>The HyperText Markup Language or HTML is the standard markup language for documents 
         designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
         </p>
+
+        </div>
         
-        <p class='info'>
+        <div class='div_info'>
+
+        <p class='info_html'>
         Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages.
-        HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+        HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.<br></br>
+        -wiki
         </p>
+        </div>
 
-        <a class=' info fa fa-html5' href='https://en.wikipedia.org/wiki/HTML'></a>
+        <h2 class='header_html'>USES...</h2>
 
-        <h2 class='header'>TAG LIST</h2>
+        <div class='img_div'>
+    
+         <img src='https://i.imgur.com/dFLufrub.png' class='img_html'></img>
+
+        </div>
+        
+
+        <h2 class='header_html'>TAG LIST</h2>
 
         
         <code class='code'>
@@ -85,7 +109,7 @@ class Html extends Component {
 
         
 
-        <h2 class='header'>B</h2>
+        <h2 class='header_html'>B</h2>
 
         <code class='code'>
         b-	Displays enclosed text in bold typeface without conveying any added importance
@@ -131,7 +155,7 @@ class Html extends Component {
         button-	Creates a button    
         </code>
 
-        <h2 class='header'>C</h2>
+        <h2 class='header_html'>C</h2>
 
         <code class='code'>
         canvas-	Defines an area of the webpage that becomes a space for rendering graphics
@@ -165,7 +189,7 @@ class Html extends Component {
         comment-	Specifies a comment in the document's source code  
         </code>
 
-        <h2 class='header'>D</h2>
+        <h2 class='header_html'>D</h2>
 
         <code class='code'>
         datalist-	Specifies an autocomplete feature to be used with a form element
@@ -207,7 +231,7 @@ class Html extends Component {
         dt-	Defines a description term
         </code>
 
-        <h2 class='header'>E</h2>
+        <h2 class='header_html'>E</h2>
 
         <code class='code'>
         em-	Defines emphasized text
@@ -217,7 +241,7 @@ class Html extends Component {
         embed-	Defines an embedded resource
         </code>
 
-        <h2 class='header'>F</h2>
+        <h2 class='header_html'>F</h2>
 
         <code class='code'>
         fieldset-	Defines a group of form elements
@@ -251,7 +275,7 @@ class Html extends Component {
         frameset-	DEPRECATED. Defined a container for holding multiple frames
         </code>
 
-        <h2 class='header'>H</h2>
+        <h2 class='header_html'>H</h2>
 
         <code class='code'>
         h1 - h6	Defines headings in a document
@@ -273,7 +297,7 @@ class Html extends Component {
         html-	Defines a document as an HTML document
         </code>
 
-        <h2 class='header'>I</h2>
+        <h2 class='header_html'>I</h2>
         
         <code class='code'>
         i-	Defines an italic styled text
@@ -296,7 +320,7 @@ class Html extends Component {
         </code>
 
 
-        <h2 class='header'>K</h2>
+        <h2 class='header_html'>K</h2>
 
         <code class='code'>
         kbd-	Identifies a user keyboard entry
@@ -306,7 +330,7 @@ class Html extends Component {
         keygen-	DEPRECATED. Defined a key-pair used while submitting an HTML form
         </code>
 
-        <h2 class='header'>L</h2>
+        <h2 class='header_html'>L</h2>
 
         <code class='code'>
         label-	Specifies a label for a given input element
@@ -324,7 +348,7 @@ class Html extends Component {
         link-	Sets a link between a document and other external resources
         </code>
 
-        <h2 class='header'>M</h2>
+        <h2 class='header_html'>M</h2>
 
         <code class='code'>
         main-	Defines the primary content of the document
@@ -354,7 +378,7 @@ class Html extends Component {
         meter-	Displays a scalar measurement within a known range
         </code>
 
-        <h2 class='header'>N</h2>
+        <h2 class='header_html'>N</h2>
 
         <code class='code'>
         nav-	Defines a block of navigational links to the main sections of a website
@@ -369,7 +393,7 @@ class Html extends Component {
         </code>
 
 
-        <h2 class='header'>O</h2>
+        <h2 class='header_html'>O</h2>
 
         <code class='code'>
         object-	Defines an external source that is embedded into the HTML document
@@ -391,7 +415,7 @@ class Html extends Component {
         output-	Displays the result of a calculation performed
         </code>
 
-        <h2 class='header'>P</h2>
+        <h2 class='header_html'>P</h2>
         
         <code class='code'>
         p-	Defines an HTML paragraph of text
@@ -409,13 +433,13 @@ class Html extends Component {
         progress-	Displays an HTML progress bar representing the progress of a task
         </code>
 
-        <h2 class='header'>Q</h2>
+        <h2 class='header_html'>Q</h2>
 
         <code class='code'>
         q-	Indicates that the enclosed text is an inline quotation
         </code>
 
-        <h2 class='header'>R</h2>
+        <h2 class='header_html'>R</h2>
 
         <code class='code'>
         rp-	Defines a fallback parenthesis for a ruby annotation
@@ -429,7 +453,7 @@ class Html extends Component {
         ruby-	Represents ruby annotation for Asian characters
         </code>
 
-        <h2 class='header'>S</h2>
+        <h2 class='header_html'>S</h2>
 
         <code class='code'>
         s-	Draws a line across the text making a strikethrough
@@ -487,7 +511,7 @@ class Html extends Component {
         sup-	Defines superscript text
         </code>
 
-        <h2 class='header'>T</h2>
+        <h2 class='header_html'>T</h2>
 
         <code class='code'>
         table-	Includes a table with rows and columns in a web page
@@ -533,7 +557,7 @@ class Html extends Component {
         tt-	DEPRECATED. Defined text to be displayed in teletype font
         </code>
 
-        <h2 class='header'>U</h2>
+        <h2 class='header_html'>U</h2>
 
         <code class='code'>
         u-	Underlines the text
@@ -543,7 +567,7 @@ class Html extends Component {
         ul-	Defines an unordered list
         </code>
 
-        <h2 class='header'>V</h2>
+        <h2 class='header_html'>V</h2>
 
         <code class='code'>
         var-	Defines a variable
@@ -553,7 +577,7 @@ class Html extends Component {
         video-	Includes a video in the web page (a video clip, streams, etc.)
         </code>
 
-        <h2 class='header'>W</h2>
+        <h2 class='header_html'>W</h2>
 
         <code class='code'>
         wbr-	Defines a possible line-break in a text
