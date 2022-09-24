@@ -1,6 +1,6 @@
 import React, { Component, Col, Container, Row } from 'react'
 import './ttt.scss'
-import Head from "./header"
+
 
 
 

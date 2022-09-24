@@ -1,0 +1,123 @@
+$line-color: rgb(7, 3, 0);
+
+.block_html {
+	position: relative;
+	margin: 300px auto 0;
+	width: 1000px;
+	background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 35%, rgba(154,77,33,1) 48%, rgba(0,0,0,1) 71%);
+	background-image:
+		// <> 
+		linear-gradient(
+		    25deg,
+			  transparent 65%,
+			  $line-color,
+			  transparent 70%
+		    ),
+		linear-gradient(
+		    -25deg,
+			  transparent 65%,
+			  $line-color,
+			  transparent 70%
+		    ),
+		linear-gradient(
+		    -25deg,
+			  transparent 30%,
+			  $line-color,
+			  transparent 35%
+		    ),
+		linear-gradient(
+		    25deg,
+			  transparent 30%,
+			  $line-color,
+			  transparent 35%
+		    ),		
+		
+		// ◊
+		linear-gradient(
+		    65deg,
+			  transparent 65%,
+			  $line-color,
+			  transparent 70%
+		    ),
+		linear-gradient(
+		    -65deg,
+			  transparent 65%,
+			  $line-color,
+			  transparent 70%
+		    ),
+		linear-gradient(
+		    -65deg,
+			  transparent 30%,
+			  $line-color,
+			  transparent 35%
+		    ),
+		linear-gradient(
+		    65deg,
+			  transparent 30%,
+			  $line-color,
+			  transparent 35%
+		    );
+	background-size: 
+		5em 2em,
+		5em 2em,
+		5em 2em,
+		5em 2em,
+		
+		2em 5em,
+		2em 5em,
+		2em 5em,
+		2em 5em;
+}
+
+.block_apps:before, .block_html:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #004256, #000031,#18536d, #0407b1, #018585, 
+	#0000ff, #000706, #42436e);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 120s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.block_html:after {
+	filter: blur(50px);
+}
+
+.header_apps {
+    color: purple;
+    display: flex;
+    justify-content: center;
+}
+
+.button_con {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center, space-around, space-evenly;
+    order: 4;
+}
+
+.button{
+    color: purple;
+    background-color: #42436e;
+    display: flex;
+    justify-content: center;
+
+}
+
