@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.scss'
-import Ttt from '../ttt/ttt.js';
+// import Ttt from '../ttt/ttt.js';
 import Nav from '../nav/nav.js'
 import Hero from '../hero/hero'
 import Head from '../header/header.js'
@@ -46,6 +45,8 @@ class App extends Component {
             <Col/><br></br>
 
             <h1 class='about'>[ APPS <a  href="https://company.wizards.com/content/games" class="fab fa-d-and-d red-text"></a> GAMES ]</h1><br></br>
+
+            <Apps/>
 
             <h1 class='about'>[ HTML ]</h1>
 

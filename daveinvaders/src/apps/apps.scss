@@ -1,6 +1,6 @@
 $line-color: rgb(7, 3, 0);
 
-.block_html {
+.block_apps {
 	position: relative;
 	margin: 300px auto 0;
 	width: 1000px;
@@ -70,7 +70,7 @@ $line-color: rgb(7, 3, 0);
 		2em 5em;
 }
 
-.block_apps:before, .block_html:after {
+.block_apps:before, .block_apps:after {
 	content: '';
 	position: absolute;
 	left: -2px;
@@ -96,12 +96,12 @@ $line-color: rgb(7, 3, 0);
 	}
 }
 
-.block_html:after {
+.block_apps:after {
 	filter: blur(50px);
 }
 
 .header_apps {
-    color: purple;
+    color: rgb(255, 14, 14);
     display: flex;
     justify-content: center;
 }
@@ -109,15 +109,34 @@ $line-color: rgb(7, 3, 0);
 .button_con {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center, space-around, space-evenly;
+    justify-content: center;
     order: 4;
 }
 
-.button{
-    color: purple;
-    background-color: #42436e;
+.button_apps{
+    color: rgb(20, 222, 27);
+    background: rgb(16,88,74);
+    background: radial-gradient(circle, rgba(16,88,74,1) 0%, rgba(0,0,0,0) 100%);
     display: flex;
     justify-content: center;
+    padding: 20px 20px;
+    margin: 30px;
+    border-radius: 25%0%;
+    border: 0px;
 
+
+}
+
+.icon_apps > a {
+    size: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+.text_hov {
+    color: rgb(99, 255, 47);
+    padding-left: 20px;
+    padding-right: 20px;
+    
 }
 
