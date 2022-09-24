@@ -1,7 +1,7 @@
 import React, { Component, Col, Container, Row } from 'react'
 import './ttt.scss';
 import  Board  from "./Board.js";
-import Head from "./header";
+import Head from "../header/header";
 
 
 

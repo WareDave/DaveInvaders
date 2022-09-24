@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import Ttt from './ttt.js'
+import App from './App/App';
+import Ttt from './ttt/ttt.js'
 import {Route, Routes} from 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom';
 
