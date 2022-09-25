@@ -178,8 +178,8 @@ class Dice extends Component {
 
      </div>
 
-     <div>
-    <h1>DICE <a  href="https://company.wizards.com/content/games" class="fab fa-d-and-d red-text"></a> ROLLER</h1>
+     <div class='h-new'>
+    <h3 class='h_new'>DICE <a  href="https://company.wizards.com/content/games" class="fab fa-d-and-d red-text"></a> ROLLER</h3>
      </div>
 
      <Footer/>

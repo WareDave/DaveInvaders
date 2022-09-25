@@ -126,7 +126,7 @@ $line-color: rgb(7, 3, 0);
 
 .h_awn {
 
-    color: yellowgreen;
+    color: rgb(61, 255, 2);
     background: rgb(16,88,74);
     background: radial-gradient(circle, rgba(16,88,74,1) 0%, rgba(0,0,0,0) 100%);
     display: flex;
@@ -138,9 +138,16 @@ $line-color: rgb(7, 3, 0);
 
 }
 
+.h_new {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+
+}
+
 .dice_6 {
 
-    color: yellowgreen;
+    color: rgb(83, 253, 5);
     background: rgb(16,88,74);
     background: radial-gradient(circle, rgba(16,88,74,1) 0%, rgba(0,0,0,0) 100%);
     display: flex;
@@ -154,7 +161,7 @@ $line-color: rgb(7, 3, 0);
 
 .dice_4 {
 
-    color: yellowgreen;
+    color: rgb(83, 253, 5);
     background: rgb(16,88,74);
     background: radial-gradient(circle, rgba(16,88,74,1) 0%, rgba(0,0,0,0) 100%);
     display: flex;
@@ -168,7 +175,7 @@ $line-color: rgb(7, 3, 0);
 
 .dice_8 {
 
-    color: yellowgreen;
+    color: rgb(83, 253, 5);
     background: rgb(16,88,74);
     background: radial-gradient(circle, rgba(16,88,74,1) 0%, rgba(0,0,0,0) 100%);
     display: flex;
@@ -183,7 +190,7 @@ $line-color: rgb(7, 3, 0);
 
 .dice_10 {
 
-    color: yellowgreen;
+    color: rgb(83, 253, 5);
     background: rgb(16,88,74);
     background: radial-gradient(circle, rgba(16,88,74,1) 0%, rgba(0,0,0,0) 100%);
     display: flex;
@@ -197,7 +204,7 @@ $line-color: rgb(7, 3, 0);
 
 .dice_12 {
 
-    color: yellowgreen;
+    color: rgb(83, 253, 5);
     background: rgb(16,88,74);
     background: radial-gradient(circle, rgba(16,88,74,1) 0%, rgba(0,0,0,0) 100%);
     display: flex;
@@ -211,7 +218,7 @@ $line-color: rgb(7, 3, 0);
 
 .dice_20 {
 
-    color: yellowgreen;
+    color: rgb(83, 253, 5);
     background: rgb(16,88,74);
     background: radial-gradient(circle, rgba(16,88,74,1) 0%, rgba(0,0,0,0) 100%);
     display: flex;

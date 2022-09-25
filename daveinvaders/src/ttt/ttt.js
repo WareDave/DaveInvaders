@@ -2,18 +2,8 @@ import React, { Component, Col, Container, Row } from 'react'
 import './ttt.scss';
 import  Board  from "./Board.js";
 import Head from "../header/header";
-
-
-
-
-
-
-
-
-
-
-
-
+import Nav from '../nav/nav';
+import Footer from '../footer/footer';
 
 
 
@@ -34,17 +24,14 @@ function calculateWinner(squares) {
   return null;
 }
 
-function Square(props) {
-  return (
-    <button className="square" onClick={() => props.onClick()}>
-      {props.value}
-    </button>
-  );
-}
+
 
 <Head/>
 
 class Ttt extends Component {
+
+
+  
   constructor() {
     super();
     this.state = {
@@ -110,14 +97,14 @@ class Ttt extends Component {
         moveReset = <a href="#" onClick={() => this.jumpTo(move)}>{desc}</a>
       } else {
         if (step.xIsNext) {
-          desc = 'Moves' ;
+          desc = 'Kills' ;
           movesO.push(
             <li key={move}>
               <a href="#" onClick={() => this.jumpTo(move)}>{desc}</a>
             </li>
           )
         } else {
-          desc = 'Moves' ;
+          desc = 'Kills' ;
           movesX.push(
             <li key={move}>
               <a href="#" onClick={() => this.jumpTo(move)}>{desc}</a>
@@ -131,31 +118,61 @@ class Ttt extends Component {
 
       <main>
 
-      
-      <div className="game-wrap">
-        <div className="game-header">
-          <div>{status}</div>
-          <div>{moveReset}</div>
-        </div>
-        <div className="game-body">
-          <div className="game-left">
-            <div className="title">Player: X</div>
-            {/* <ol>{movesX}</ol> */}
-          </div>
-          <div className="game-main">
-            <Board squares={current.squares} onClick={(i) => this.handleClick(i)} />
-          </div>
-          <div className="game-right">
-            <div id='fuckery' className="title">Player: O</div>
-            {/* <ol>{movesO}</ol> */}
-          </div>
-        </div>
-      </div>
+      <Nav/>
+
+      <Head/>
+
+      <div class='block_ttt'>
+            
+            <div class="game-wrap">
+
+              <div class="game-header">
+
+                <div>
+                  
+                  <h1 class='h_ttt'>{status}</h1>
+
+                </div>
+
+                <div>{moveReset}</div>
+
+              </div>
+
+              <div class="game-body">
+
+                <div class="game-left">
+
+                  <div class="title">X Dude</div>
+
+                  <ol>{movesX}</ol>
+
+                </div>
+
+                <div class="game-main">
+
+                  <Board squares={current.squares} onClick={(i) => this.handleClick(i)} />
+
+                </div>
+
+                <div class="game-right">
+
+                  <div id='fuckery' class="title">O Dude</div>
+
+                  <ol>{movesO}</ol>
+
+                </div>
+
+              </div>
+
+            </div>
 
 
      
+      </div>
 
+      <h3 class='h_go'>TICTAC GO</h3>
 
+      <Footer/>
 
       </main>
     );

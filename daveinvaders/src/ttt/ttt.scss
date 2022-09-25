@@ -1,84 +1,187 @@
-.fuckery{
-    color: aqua;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-top: 25px;
-    font-size: 60px;
-    color: #ffffff;
-  }
-  
-  a {
-    color: #459;
-    text-decoration: none;
-  }
-  
-  a:hover, a:focus, a:active {
-    color: #2095f1;
-  }
-  
-  ol,
-  ul {
-    padding-left: 30px;
-  }
-  
-  .board-row:after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .status {
-    margin-bottom: 10px;
-  }
-  
-  .square {
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #000;
-    float: left;
-    font-size: 34px;
-    font-weight: bold;
-    line-height: 68px;
-    height: 68px;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
-    text-align: center;
-    width: 68px;
-  }
-  
-  .square:focus {
-    outline: none;
-  }
-  
-  .kbd-navigation .square:focus {
-    background: #ddd;
-  }
-  
-  .game-wrap {
-    width: 441px;
-    margin: 0 auto;
-  }
-  
-  .game-header {
-    width: 441px;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .game-header>div {
-    margin-bottom: 10px;
-  }
-  
-  .game-body {
-    display: flex;
-    flex-direction: row;
-    width: 441px;
-  }
-  
-  .dickkiller {
-    color: chartreuse;
-    text-shadow: 0 4px 8px 0 blueviolet, 0 6px 20px 0 black;
-  }
+$line-color: rgb(7, 3, 0);
+
+.block_ttt {
+	position: relative;
+	margin: 100px auto 0;
+	width: 1000px;
+	background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 35%, rgba(154,77,33,1) 48%, rgba(0,0,0,1) 71%);
+    border-radius: 10%;
+	background-image:
+		// <> 
+		linear-gradient(
+		    25deg,
+			  transparent 65%,
+			  $line-color,
+			  transparent 70%
+		    ),
+		linear-gradient(
+		    -25deg,
+			  transparent 65%,
+			  $line-color,
+			  transparent 70%
+		    ),
+		linear-gradient(
+		    -25deg,
+			  transparent 30%,
+			  $line-color,
+			  transparent 35%
+		    ),
+		linear-gradient(
+		    25deg,
+			  transparent 30%,
+			  $line-color,
+			  transparent 35%
+		    ),		
+		
+		// ◊
+		linear-gradient(
+		    65deg,
+			  transparent 65%,
+			  $line-color,
+			  transparent 70%
+		    ),
+		linear-gradient(
+		    -65deg,
+			  transparent 65%,
+			  $line-color,
+			  transparent 70%
+		    ),
+		linear-gradient(
+		    -65deg,
+			  transparent 30%,
+			  $line-color,
+			  transparent 35%
+		    ),
+		linear-gradient(
+		    65deg,
+			  transparent 30%,
+			  $line-color,
+			  transparent 35%
+		    );
+	background-size: 
+		5em 2em,
+		5em 2em,
+		5em 2em,
+		5em 2em,
+		
+		2em 5em,
+		2em 5em,
+		2em 5em,
+		2em 5em;
+}
+
+.block_ttt:before, .block_ttt:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #004256, #000031,#18536d, #0407b1, #018585, 
+	#0000ff, #000706, #42436e);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 120s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.block_ttt:after {
+	filter: blur(50px);
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background-color: rgb(39, 36, 36);
+  color: rgb(114, 253, 0);
+  border: 1px solid rgb(102, 252, 3);
+  float: left;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 68px;
+  height: 68px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 68px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game-wrap {
+  width: 441px;
+  margin: 0 auto;
+}
+
+.game-header {
+  width: 441px;
+  text-align: center;
+  padding: 10px;
+}
+
+.game-header>div {
+  margin-bottom: 10px;
+}
+
+.game-body {
+  display: flex;
+  flex-direction: row;
+  width: 441px;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+
+/* .game-main {
+
+} */
+
+.game-left, .game-right {
+  width: 120px;
+  color: rgb(241, 9, 9);
+}
+
+.game-left .title, .game-right .title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.h_ttt {
+  color: greenyellow;
+}
+
+.h_go {
+  display: flex;
+  justify-content: center;
+  color: #ddd;
+}
