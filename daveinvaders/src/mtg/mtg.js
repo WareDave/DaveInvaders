@@ -40,7 +40,7 @@ class Mtg extends Component {
      
       
 
-      var counter = 60;
+      var counter = 20;
 
       $("#plus").click(function(){
         counter++;

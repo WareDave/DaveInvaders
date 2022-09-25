@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.scss'
-// import Ttt from '../ttt/ttt.js';
 import Nav from '../nav/nav.js'
 import Hero from '../hero/hero'
 import Head from '../header/header.js'
