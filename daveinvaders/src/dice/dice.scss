@@ -1,0 +1,231 @@
+$line-color: rgb(7, 3, 0);
+
+.block_dice {
+	position: relative;
+	margin: 100px auto 0;
+	width: 1000px;
+	background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 35%, rgba(154,77,33,1) 48%, rgba(0,0,0,1) 71%);
+    border-radius: 10%;
+	background-image:
+		// <> 
+		linear-gradient(
+		    25deg,
+			  transparent 65%,
+			  $line-color,
+			  transparent 70%
+		    ),
+		linear-gradient(
+		    -25deg,
+			  transparent 65%,
+			  $line-color,
+			  transparent 70%
+		    ),
+		linear-gradient(
+		    -25deg,
+			  transparent 30%,
+			  $line-color,
+			  transparent 35%
+		    ),
+		linear-gradient(
+		    25deg,
+			  transparent 30%,
+			  $line-color,
+			  transparent 35%
+		    ),		
+		
+		// ◊
+		linear-gradient(
+		    65deg,
+			  transparent 65%,
+			  $line-color,
+			  transparent 70%
+		    ),
+		linear-gradient(
+		    -65deg,
+			  transparent 65%,
+			  $line-color,
+			  transparent 70%
+		    ),
+		linear-gradient(
+		    -65deg,
+			  transparent 30%,
+			  $line-color,
+			  transparent 35%
+		    ),
+		linear-gradient(
+		    65deg,
+			  transparent 30%,
+			  $line-color,
+			  transparent 35%
+		    );
+	background-size: 
+		5em 2em,
+		5em 2em,
+		5em 2em,
+		5em 2em,
+		
+		2em 5em,
+		2em 5em,
+		2em 5em,
+		2em 5em;
+}
+
+.block_dice:before, .block_dice:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #004256, #000031,#18536d, #0407b1, #018585, 
+	#0000ff, #000706, #42436e);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 120s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.block_dice:after {
+	filter: blur(50px);
+}
+
+.div_col {
+
+    padding: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    order: 6;
+
+}
+
+.div_awn {
+
+    padding: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    order: 1;
+   
+
+}
+
+
+
+.h_awn {
+
+    color: rgb(61, 255, 2);
+    background: rgb(16,88,74);
+    background: radial-gradient(circle, rgba(16,88,74,1) 0%, rgba(0,0,0,0) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+    margin: 30px;
+    border-radius: 25%50%;
+    border: 0px;
+
+}
+
+.h_new {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+
+}
+
+.dice_6 {
+
+    color: rgb(83, 253, 5);
+    background: rgb(16,88,74);
+    background: radial-gradient(circle, rgba(16,88,74,1) 0%, rgba(0,0,0,0) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+    margin: 30px;
+    border-radius: 25%50%;
+    border: 0px;
+
+}
+
+.dice_4 {
+
+    color: rgb(83, 253, 5);
+    background: rgb(16,88,74);
+    background: radial-gradient(circle, rgba(16,88,74,1) 0%, rgba(0,0,0,0) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+    margin: 30px;
+    border-radius: 25%50%;
+    border: 0px;
+
+}
+
+.dice_8 {
+
+    color: rgb(83, 253, 5);
+    background: rgb(16,88,74);
+    background: radial-gradient(circle, rgba(16,88,74,1) 0%, rgba(0,0,0,0) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+    margin: 30px;
+    border-radius: 25%50%;
+    border: 0px;
+    
+
+}
+
+.dice_10 {
+
+    color: rgb(83, 253, 5);
+    background: rgb(16,88,74);
+    background: radial-gradient(circle, rgba(16,88,74,1) 0%, rgba(0,0,0,0) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+    margin: 30px;
+    border-radius: 25%50%;
+    border: 0px;
+
+}
+
+.dice_12 {
+
+    color: rgb(83, 253, 5);
+    background: rgb(16,88,74);
+    background: radial-gradient(circle, rgba(16,88,74,1) 0%, rgba(0,0,0,0) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+    margin: 30px;
+    border-radius: 25%50%;
+    border: 0px;
+
+}
+
+.dice_20 {
+
+    color: rgb(83, 253, 5);
+    background: rgb(16,88,74);
+    background: radial-gradient(circle, rgba(16,88,74,1) 0%, rgba(0,0,0,0) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+    margin: 30px;
+    border-radius: 25%50%;
+    border: 0px;
+
+}
