@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './apps.scss'
-
+import Ttt from '../ttt/ttt';
 
 
 
@@ -80,7 +80,7 @@ class Apps extends Component {
 
     <button class='button_apps' type="button"><h5 class='text_hov'><a class='fab fa-wizards-of-the-coast' href='https://post-hub.herokuapp.com/'></a></h5></button>
 
-    <button class='button_apps' type="button" ><h5 class='text_hov'><a class='fa fa-th' href='https://captains-tools.herokuapp.com/'></a></h5></button>
+    <button class='button_apps' type="button" ><h5 class='text_hov'><Link to='/tictacgo'><a class='fa fa-th' href=''></a></Link></h5></button>
 
     <button class='button_apps' type="button"><h5 class='text_hov'><a class='fas fa-chess' href='https://www.linkedin.com/in/dave-the-clark/'></a></h5></button>
 
