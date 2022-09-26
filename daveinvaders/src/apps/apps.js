@@ -82,7 +82,7 @@ class Apps extends Component {
 
     <button class='button_apps' type="button" ><h5 class='text_hov'><Link to='/tictacgo'><a class='fa fa-th' href=''></a></Link></h5></button>
 
-    <button class='button_apps' type="button"><h5 class='text_hov'><Link to=''><a class='fas fa-chess'></a></Link></h5></button>
+    <button class='button_apps' type="button"><h5 class='text_hov'><a  href='https://master.d19banrvabqny1.amplifyapp.com/' class='fas fa-chess'></a></h5></button>
 
     <button class='button_apps' type="button"><h5 class='text_hov'><Link to='/dice'><a class='fas fa-dice-d20' href='https://github.com/WareDave'></a></Link></h5></button>
 

@@ -10,13 +10,22 @@ import { BrowserRouter } from 'react-router-dom';
 
 
 ReactDOM.render(
+
 <BrowserRouter>
+
   <Routes>
+
     <Route path="/" element={<App />}></Route>
+
     <Route path="/dice" element={<Dice />}></Route>
+
     <Route path='/ticTacgo' element={<Ttt/>}></Route>
+
     <Route path="/counter" element={<Mtg />}></Route>
+
+
   </Routes>
+
 </BrowserRouter>,
 
 
