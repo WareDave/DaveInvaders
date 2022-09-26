@@ -116,6 +116,13 @@ class Timeline extends Component {
                
             </p>
 
+
+            <p>
+
+            ...To be continued
+
+            </p>
+
             <h1 class='h_timeline' href='/'><a href='/'>[ _TOP ]</a></h1>
 
             <br></br><br></br><br></br>
