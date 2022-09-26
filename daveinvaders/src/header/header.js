@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './header.scss'
 
 
@@ -24,7 +25,7 @@ class Head extends Component {
       <main>
         
        
-    <div class='head'>[ Dave (☆)  Clark ]</div>
+    <div class='head'><Link class='head_link' to='/'>[ Dave (☆)  Clark ]</Link></div>
     <p class='head2'>WEB WIZARD</p>
    
    

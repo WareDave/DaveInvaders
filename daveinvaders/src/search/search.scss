@@ -1,13 +1,13 @@
 $line-color: rgb(7, 3, 0);
 
-.block_apps {
+.block_search {
 	position: relative;
 	margin: 300px auto 0;
 	width: 1000px;
 	background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 35%, rgba(154,77,33,1) 48%, rgba(0,0,0,1) 71%);
 	background-image:
-		// <> 
+		
 		linear-gradient(
 		    25deg,
 			  transparent 65%,
@@ -33,7 +33,7 @@ $line-color: rgb(7, 3, 0);
 			  transparent 35%
 		    ),		
 		
-		// ◊
+		
 		linear-gradient(
 		    65deg,
 			  transparent 65%,
@@ -70,7 +70,7 @@ $line-color: rgb(7, 3, 0);
 		2em 5em;
 }
 
-.block_apps:before, .block_apps:after {
+.block_search:before, .block_search:after {
 	content: '';
 	position: absolute;
 	left: -2px;
@@ -96,24 +96,37 @@ $line-color: rgb(7, 3, 0);
 	}
 }
 
-.block_apps:after {
+.block_search:after {
 	filter: blur(50px);
 }
 
-.header_apps {
-    color: rgb(252, 252, 252);
-    display: flex;
-    justify-content: center;
-}
 
-.button_con {
+// ROW
+.row_search {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    order: 4;
-}
-
-.button_apps{
+  }
+  
+//  LEFT COL
+  .left_search {
+   display: flex;
+   justify-content: center;
+  }
+  
+  .left_search .h_search {
+    padding-left: 8px;
+  }
+  
+  // RIGHT COL
+  .right_search {
+    flex: 65%;
+    padding: 15px;
+  }
+  
+  //  SEARCH BOX
+  #mySearch {
+    width: 60%;
+    font-size: 18px;
+    padding: 11px;
     color: rgb(20, 222, 27);
     background: rgb(16,88,74);
     background: radial-gradient(circle, rgba(16,88,74,1) 0%, rgba(0,0,0,0) 100%);
@@ -123,20 +136,55 @@ $line-color: rgb(7, 3, 0);
     margin: 30px;
     border-radius: 25%0%;
     border: 0px;
-
-
-}
-
-.icon_apps > a {
-    size: 20px;
-    height: 20px;
-    width: 20px;
-}
-
-.text_hov {
-    color: rgb(99, 255, 47);
-    padding-left: 20px;
-    padding-right: 20px;
     
-}
+  }
+  
+  // NAV
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: rgb(143, 246, 8);
+    display: block
+  }
+  
+  #myMenu li a:hover {
+    background-color: rgb(237, 201, 241);
+  }
 
+  // header
+
+  .h_search {
+    color: rgb(20, 222, 27);
+    background: rgb(16,88,74);
+    background: radial-gradient(circle, rgba(16,88,74,1) 0%, rgba(0,0,0,0) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+    margin: 30px;
+    border-radius: 25%0%;
+    border: 0px;
+  }
+
+  // button
+
+  .button_search {
+
+    color: rgb(20, 222, 27);
+    background: rgb(16,88,74);
+    background: radial-gradient(circle, rgba(16,88,74,1) 0%, rgba(0,0,0,0) 100%);
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    padding: 20px 20px;
+    margin: 30px;
+    border-radius: 25%0%;
+    border: 0px;
+
+  }
