@@ -18,8 +18,9 @@ class Timeline extends Component {
     
     return (
      
-
-
+        <main>
+          
+        
       
         <div class="timeline">
 
@@ -73,24 +74,67 @@ class Timeline extends Component {
 
 
 
-        {/* <div class="container left">
+        <div class="container left">
+
           <div class="content">
-            <h2>2011</h2>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            
+            <h2>year 2007</h2>
+
+            <p>
+
+              Sass (short for syntactically awesome style sheets) is a preprocessor scripting language that is interpreted or compiled into Cascading
+               Style Sheets (CSS). SassScript is the scripting language itself.
+              Sass consists of two syntaxes. The original syntax, called "the indented syntax," uses a syntax similar to Haml.It uses indentation to
+               separate code blocks and newline characters to separate rules.
+              The newer syntax, "SCSS" (Sassy CSS), uses block formattinglike that of CSS. It uses braces to denote code blocks and semicolons to
+              separate rules within a block. The indented syntax and SCSS files are traditionally given the extensions .sass and .scss, respectively.
+              -wiki
+
+              The wizards styling power is that of a 12th level wizard. You can see the hunger in the embers of his eyes.
+
+            </p>
+
           </div>
+
         </div><br></br>
 
 
 
         <div class="container right">
+
           <div class="content">
-            <h2>2007</h2>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+
+            <h2>2008</h2>
+
+
+            <p>
+            
+            Wing Depo is open for bussness. By the parents of the wizared no less. A deal is stuck in the darkness of familly diner.
+            A real code gig was to be his. For the parents needed online sales and metrics. New spells he will need. his mighty Python,
+            his first love. Will need to be fused with dark front end spell JavaScript...<br></br>
+            In the darkness they were bound. His place a web wizzard was sealed.
+               
+            </p>
+
+            <h1 class='h_timeline' href='/'><a href='/'>[ _TOP ]</a></h1>
+
+            <br></br><br></br><br></br>
+
           </div>
-        </div><br></br> */}
+
+        </div><br></br><br></br><br></br>
+
+
+
+    
 
 
       </div>
+
+      <div></div>
+
+
+      </main>
      
     )
   }

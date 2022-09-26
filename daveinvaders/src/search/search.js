@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './search.scss'
 
 
@@ -41,6 +41,14 @@ function theSearch() {
     
   }
 
+  function Alert() {
+    alert('Search Under Maintenance. [ Dave is Sorry =( ]');
+  }
+
+  // const alert = document.getElementById('alert');
+          
+  //         alert.onclick =  Alert();
+
 
 
 
@@ -70,7 +78,7 @@ class Search extends Component {
 
         <input type="text" id="mySearch" onkeyup="theSearch()" placeholder="Search.." title="Type in a category"></input>
 
-        <button class='button_search' onclick={ theSearch }>Search</button>
+        <button class='button_search' id={Alert}>Search</button>
 
         <ul id="myMenu">
 
